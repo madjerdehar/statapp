@@ -15,5 +15,6 @@ with open("insults.csv", "rb") as f:
 # ---    
 # exemple SVM:
 from sklearn import svm
+clf = svm.SVC()
 clf.fit(X, y)  
 
