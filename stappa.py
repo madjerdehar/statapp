@@ -17,4 +17,4 @@ with open("insults.csv", "rb") as f:
 from sklearn import svm
 clf = svm.SVC()
 clf.fit(X, y)  
-
+clf.predict(X)
