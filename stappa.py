@@ -1,4 +1,4 @@
-from scipy.io import mmread
+from scipy]io import mmread
 with open('features-small.matrixMarket.mtx') as f:
     X = mmread(f)
 X.shape
@@ -9,5 +9,5 @@ with open("insults.csv", "rb") as f:
     y=[int(row[0]) for row in csv.reader(f)]
 
 with open("insults.csv", "rb") as f:
-    messages=[int(row[1]) for row in csv.reader(f)]
+    messages=[row[1] for row in csv.reader(f)]
     
