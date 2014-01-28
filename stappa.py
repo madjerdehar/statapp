@@ -8,3 +8,6 @@ import csv
 with open("insults.csv", "rb") as f:
     y=[int(row[0]) for row in csv.reader(f)]
 
+with open("insults.csv", "rb") as f:
+    messages=[int(row[1]) for row in csv.reader(f)]
+    
