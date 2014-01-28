@@ -5,5 +5,6 @@ X.shape
 
 
 import csv
-cr=csv.reader(open("insults.csv","rb")
-y=[int(row[0]) for row in cr]
+with open("insults.csv", "rb") as f:
+    y=[int(row[0]) for row in csv.reader(f)]
+
